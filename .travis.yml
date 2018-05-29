@@ -5,4 +5,9 @@ python:
 install:
   - pip install -r requirements-dev.txt
 # command to run tests
+before_script:
+  - ls -l
+  - python manage.py migrate
+  - python manage.py makemigrations
+  - python manage.py migrate
 script: pytest
