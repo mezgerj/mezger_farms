@@ -1,6 +1,6 @@
 from django.test import TestCase
 
-from mezger_farms.farm.models import Farm
+from farm_core.models import Farm
 
 
 class TestExample(TestCase):
