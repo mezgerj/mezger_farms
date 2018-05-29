@@ -1,0 +1,17 @@
+addons:
+    apt:
+      update: true
+language: python
+python:
+  - "3.6"
+# command to install dependencies
+install:
+  - pip install -r requirements-dev.txt
+# command to run tests
+before_script:
+  - ls -l
+  - cd mezger_farms
+  - python manage.py migrate
+  - python manage.py makemigrations
+  - python manage.py migrate
+script: pytest
