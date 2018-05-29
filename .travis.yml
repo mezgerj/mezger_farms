@@ -11,7 +11,7 @@ install:
 before_script:
   - ls -l
   - cd mezger_farms
-  - python mezger_farms/manage.py migrate
-  - python mezger_farms/manage.py makemigrations
-  - python mezger_farms/manage.py migrate
+  - python manage.py migrate
+  - python manage.py makemigrations
+  - python manage.py migrate
 script: pytest
