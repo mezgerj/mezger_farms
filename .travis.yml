@@ -10,7 +10,6 @@ install:
 # command to run tests
 before_script:
   - ls -l
-  - cd mezger_farms
   - python manage.py migrate
   - python manage.py makemigrations
   - python manage.py migrate
