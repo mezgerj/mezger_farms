@@ -4,7 +4,7 @@ from farm_core.models import Farm
 
 
 class TestExample(TestCase):
-    fixtures = ['mezger_farms/farm_core/fixtures/fixture.json']
+    fixtures = ['farm_core/fixtures/fixture.json']
 
     def test_farm_repr(self):
         import os
