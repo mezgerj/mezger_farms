@@ -171,3 +171,6 @@ fabric.properties
 
 #migrations
 *migrations*
+
+#vscode
+.vscode*
